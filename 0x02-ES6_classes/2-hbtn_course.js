@@ -2,19 +2,22 @@ export default class HolbertonCourse {
   constructor(name, length, students) {
     if (typeof name !== 'string') {
       throw new TypeError('Name must be a string');
+    } else {
+      // eslint-disable-next-line guard-for-in, no-underscore-dangle
+      this._name = name;
     }
     if (typeof length !== 'number') {
       throw new TypeError('Length must be a Number');
+    } else {
+      // eslint-disable-next-line guard-for-in, no-underscore-dangle
+      this._length = length;
     }
     if (!Array.isArray(students)) {
       throw new TypeError('Students must be an Array');
+    } else {
+      // eslint-disable-next-line guard-for-in, no-underscore-dangle
+      this._students = students;
     }
-    // eslint-disable-next-line guard-for-in, no-underscore-dangle
-    this._name = name;
-    // eslint-disable-next-line guard-for-in, no-underscore-dangle
-    this._length = length;
-    // eslint-disable-next-line guard-for-in, no-underscore-dangle
-    this._students = students;
   }
 
   get name() {
