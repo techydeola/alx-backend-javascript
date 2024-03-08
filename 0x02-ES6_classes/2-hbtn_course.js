@@ -35,7 +35,7 @@ export default class HolbertonCourse {
 
   get length() {
     // eslint-disable-next-line guard-for-in, no-underscore-dangle
-    return this._name;
+    return this._length;
   }
 
   set length(val) {
