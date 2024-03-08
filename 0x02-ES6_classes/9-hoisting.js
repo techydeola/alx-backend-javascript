@@ -34,7 +34,8 @@ export class StudentHolberton {
   }
 
   get holbertonClass() {
-    return this.holbertonClass;
+    // eslint-disable-next-line guard-for-in, no-underscore-dangle
+    return this._holbertonClass;
   }
 
   get fullStudentDescription() {
