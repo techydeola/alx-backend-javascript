@@ -7,3 +7,5 @@ app.get('/', (req, res) => {
   res.write('Hello Holberton School!');
   res.end();
 });
+
+module.exports = app;
