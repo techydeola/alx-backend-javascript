@@ -9,8 +9,10 @@ calculateNumber = (type, a, b) => {
     if (Math.round(b) == 0) {
       return 'Error'
     }
-    return Math.floor((Math.round(a) / Math.round(b)));
+    return (Math.round(a) / Math.round(b));
   }
 }
+
+console.log(calculateNumber('DIVIDE', 1.4, 4.5));
 
 module.exports = calculateNumber;
